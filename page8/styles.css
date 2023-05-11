@@ -1,0 +1,70 @@
+/* Place your CSS styles in this file */
+h1 {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 2px solid black;
+  transition-duration: 0.4s;
+  width:5%;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.train1but {background-color: red; font-size: 16px; padding: 2px; } 
+/*
+.train1but:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+*/
+
+.train2but {background-color: rgb(233, 95, 80);font-size: 16px; padding: 12px;} 
+.train2but:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.grid1but {background-color: #b1a6a6; color: black; cursor: not-allowed} /* Gray */ 
+
+.grid2but {background-color: #e7e7e7; color: rgb(73, 42, 42);} /* Gray */ 
+/*
+.grid2but:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+*/
+.arrowbut {background-color: transparent; cursor: not-allowed;
+           color: black;
+           border: none; font-size: 16px; padding: 15px 10px;} 
+
+.destbut {background-color: #cee7f7; color: black;} 
+
+.rackbut {background-color: #b2aef2; color: black;} 
+/*
+.destbut:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+*/
+
+.solutionbut {background-color: #ebb2b2; padding: 15px 10px; font-size: 12px;}
+.successbut {background-color: #ebb2b2; padding: 15px 10px; font-size: 10px;}

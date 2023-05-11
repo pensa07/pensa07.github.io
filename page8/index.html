@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+    Version for subsidiary 5x5 puzzle page 1.0.0 08/05/23
+-->
+
+<title>Mallard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="utf-8">
+    
+     <link rel="stylesheet" href="styles.css">   
+
+    
+
+</head>
+
+<body>
+
+<h1>
+    Mallard
+</h1>
+
+<p>
+    5 x 5 puzzle example
+    </p>
+<div style ="height:50px">
+    <button class="button train1but"  id="train0"><img src="steam.png" draggable = "false"  style ="width:44px; height:36px" ></button>
+    <button class="button grid1but" id = "g00">A</button>
+    <button class="button grid2but"  draggable = "true" id="g01">E</button>
+    <button class="button grid2but"  draggable = "true" id="g02">E</button>
+    <button class="button grid2but" draggable = "true"  id="g03">E</button>
+    <button class="button grid2but" draggable = "true" id="g04">E</button>
+    <button class="button arrowbut"><---</button>
+    <button class="button destbut" draggable = "true" id="d0">E</button>
+</div>
+<div style ="height:50px">
+    <button class="button train1but"  id="train1"><img src="steam.png" draggable = "false" style ="width:44px; height:36px" ></button>
+    <button class="button grid2but" draggable = "true"  id="g10">I</button>
+    <button class="button grid1but"  id = "g11">A</button>
+    <button class="button grid2but" draggable = "true" id="g12">I</button>
+    <button class="button grid2but" draggable = "true" id="g13">I</button>
+    <button class="button grid2but" draggable = "true" id="g14">I</button>
+    <button class="button arrowbut"><---</button>
+    <button class="button destbut" draggable = "true" id="d1">I</button>
+</div>
+<div style ="height:50px">
+    <button class="button train1but"  id="train2"><img src="steam.png" draggable = "false" style ="width:44px; height:36px"  ></button>
+    <button class="button grid2but" draggable = "true" id="g20">R</button>
+    <button class="button grid2but" draggable = "true" id="g21">R</button>
+    <button class="button grid1but" id = "g22">A</button>
+    <button class="button grid2but" draggable = "true" id="g23">R</button>
+    <button class="button grid2but" draggable = "true" id="g24">R</button>
+    <button class="button arrowbut"><---</button>
+    <button class="button destbut" draggable = "true" id="d2">R</button>
+</div>
+<div style ="height:50px">
+    <button class="button train1but"  id="train3"><img src="steam.png" draggable = "false" style ="width:44px; height:36px"  ></button>
+    <button class="button grid2but" draggable = "true"  id="g30">E</button>
+    <button class="button grid2but" draggable = "true" id="g31">E</button>
+    <button class="button grid2but" draggable = "true" id="g32">E</button>
+    <button class="button grid1but" id = "g33">A</button>
+    <button class="button grid2but" draggable = "true" id="g34">E</button>
+    <button class="button arrowbut"><---</button>
+    <button class="button destbut" draggable = "true" id="d3">E</button>
+</div>
+<div style ="height:50px">
+    <button class="button train1but"  id="train4"><img src="steam.png" draggable = "false" style ="width:44px; height:36px"  ></button>
+    <button class="button grid2but" draggable = "true" id="g40">E</button>
+    <button class="button grid2but" draggable = "true" id="g41">E</button>
+    <button class="button grid2but" draggable = "true" id="g42">E</button>
+    <button class="button grid2but" draggable = "true" id = "g43">A</button>
+    <button class="button grid1but"  id="g44">E</button>
+    <button class="button arrowbut"><---</button>
+    <button class="button destbut" draggable = "true" id="d4">E</button>
+</div>
+<p style ="height:10px">Rack</p>
+<div style ="height:100px">
+
+    <button class="button rackbut" draggable = "true" id="r0">D</button>
+    <button class="button rackbut" draggable = "true" id="r1">E</button>
+    <button class="button rackbut" draggable = "true" id="r2">I</button>
+    <button class="button rackbut" draggable = "true" id="r3">J</button>
+    <button class="button rackbut" draggable = "true" id="r4">L</button>
+    <button class="button rackbut" draggable = "true" id="r5">S</button>
+    <button class="button rackbut" draggable = "true" id="r6">W</button>
+    <button class="button rackbut" draggable = "true" id="r7">X</button>
+    <br>
+    <button class="button rackbut" draggable = "true" id="r8">D</button>
+    <button class="button rackbut" draggable = "true" id="r9">E</button>
+    <button class="button rackbut" draggable = "true" id="r10">I</button>
+    <button class="button rackbut" draggable = "true" id="r11">J</button>
+    <button class="button rackbut" draggable = "true" id="r12">L</button>
+    <button class="button rackbut" draggable = "true" id="r13">S</button>
+    <button class="button rackbut" draggable = "true" id="r14">W</button>
+</div>
+<div>
+   
+    <form>   
+        <label for="tryword">Try Word:</label>
+        <input type="text" style="font-size: 150%;" size="5"
+        style="text-align: center;" id="tryword" name="tryword" >
+        <button>Submit</button>
+        <span id = "usermess"></span>
+        <span id = "vocabmess"></span>
+    </form>
+    <button  onclick="showSolution()">Solution</button>
+    <span>Please submit a word to fit a row or drag and drop a letter or click button to show a solution.</span>
+</div>
+<div>
+    <p> <a href="../index.html">Return</a></p>
+</div>
+<script src="malldata.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

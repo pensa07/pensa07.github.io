@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+
+<title>Mallard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+-->
+
+
+<head>
+    <meta charset="utf-8">
+    
+     <link rel="stylesheet" href="styles.css">   
+
+    
+
+</head>
+
+<body>
+
+<h1>
+    About Mallard
+</h1>
+<h2>The Puzzle Desciption</h2>
+<p>Mallard is a word game where the aim is to make up legal words from letter tiles. Each row contains one word
+    and can be likened to a train with carriages. A key letter starts in the first carriage 
+    and moves to the last row by row. Puzzles can have a 4x4 or 5x5 grid.
+    Each train (row) has one letter to place from the destination shown vertically on the
+     right and takes two or three from the rack below the grid depending on the grid size. The key letter is fixed.
+    The puzzle completes when the trains are full with legal words 
+    and the destination and rack places are empty. Whole words can be entered from the keyboard. 
+    An entered word is removed if re-entered. If a new word 
+    needs rack letters then an existing word will be recycled. Alternatively, 
+    drag and drop can be used to make the words. The train tiles are traffic lights to provide feedback. 
+    So red is for no legal word, amber is for a legal word in that row and all the train tiles turn
+    green when all rows are legal and the puzzle is complete.
+    </p>
+<h2>Background</h2>
+<p>
+    The development of Mallard came about when I started to consider why I wasn't that interested in the Guardian's 
+    new(ish) puzzle Wordiply. After playing it for a while I realised that it had aspects I found less engaging. 
+    It asks the user to come up with the longest possible word that contains another 3 or 4 letter word 
+    with 5 attempts to find the longest.
+    I like to complete/win a puzzle but the end point wasn't clear - how long was the longest? My headspace 
+    was taken up for too long as I tried to figure out an ever longer word. At the same time I realised that
+    most long words started with under- or over- or other prefix and ended with a suffix like -lessness or 
+    -ability. So it became repetitive.
+</p>
+<p>
+    So I realised I liked puzzles that had a clear end point and that didn't take too long but were non trivial. 
+    Wordle ticks these boxes very well. It's simple, easy to understand and takes 5 to 10 minutes. That's very difficult
+    to repeat as the article in the Guardian by the Wordiply creator attests [reference].
+</p>
+<p>
+    But I happened to have an idea one day and Mallard came to be. 
+    I have no real idea if anyone will think it is a game worth playing.
+    My interest in developing it was only partly the game itself. It was also because it was an opportunity
+    to do some programming. I last wrote computer software 25 years ago when I used C++ to write electronics CAD
+    applications. So having asked for advice, I have used Rust to write the code to produce each puzzle
+    and CSS, HTML and Javascript for the GUI side.
+    
+</p>
+<p>
+    It is possible to play this game with pencil, paper and an eraser, though you would have to be disciplined to keep
+    everything straight. It's probably easier to think about playing it with pre-printed game cards
+    and a set of Scrabble tiles. A multiplayer version is just about possible to envisage.
+</p>
+<h2>Status & Developments</h2>
+<p>
+    The current implementation is very much an alpha test version. I don't know whether it will work across
+    a number of platforms. Probably not. I am interested in feedback. So comments are welcome on the game itself and
+    its implementation. Also bug reports, of course. Please use this email [ref]. <br><br>
+
+    I'd like to provide a more fun way of showing success - maybe an animated train?
+
+</p>
+<h2>Acknowledgements</h2>
+<p>
+    Thanks to family members for advice and support. 
+</p>
+<p>
+    I made use of many of the webs free resources to learn enough to implement this project. These include for Rust
+    <a href="https://rust-book.cs.brown.edu/">Rust Reference</a>, for CSS, HTML and Javascript
+     <a href="https://www.w3schools.com/default.asp">W3 Schools</a> and
+      <a href="https://web.learncodeonline.in/">Learn Code Online</a>. 
+      Also the many sites like
+     stackoverflow where solutions can be found to specific problems. <br><br>
+     The source word list was produced at the <a href="http://wordlist.aspell.net/">SCOWL</a> website.
+     <br><br>
+     Thanks to all.
+</p>
+<div>
+    <p> <a href="../index.html">Return</a></p>
+</div>
+</body>
+</html>
